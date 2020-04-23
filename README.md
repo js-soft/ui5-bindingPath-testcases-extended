@@ -1,6 +1,4 @@
 
-![OpenUI5 logo](http://openui5.org/images/OpenUI5_new_big_side.png)
-
 # Purpose
 Extended test case for `sap/ui/test/matchers/BindingPath`since the orinial test cases located in [BindinPath.qunit.js](https://github.com/SAP/openui5/blob/master/src/sap.ui.core/test/sap/ui/core/qunit/opa/matchers/BindingPath.qunit.js)
 are not sufficient.
@@ -36,7 +34,3 @@ For installation instructions please see [Installing the UI5 CLI](https://github
 
 # Debugging Information
 The function `function _getFormattedPath(sPath, bWithNamedModel, bWithContext)` in `sap/ui/test/matchers/BindingPath` does `substring(1)` for all cases when the model is a named model and the path starts with a '/'. The needed workaround is a leading double slash in case the property is a model root property.
-
-## Support
-This repository is based on the [OpenUI5 template demo apps](https://openui5.hana.ondemand.com/#/demoapps) and updated regularly with our latest recommendations.
-If you found a bug, please create an [OpenUI5 issue](https://github.com/sap/openui5/issues). Thank you!
