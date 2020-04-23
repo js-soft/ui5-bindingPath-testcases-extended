@@ -1,6 +1,6 @@
 
 # Purpose
-Extended test case for `sap/ui/test/matchers/BindingPath`since the orinial test cases located in [BindinPath.qunit.js](https://github.com/SAP/openui5/blob/master/src/sap.ui.core/test/sap/ui/core/qunit/opa/matchers/BindingPath.qunit.js)
+Extended test case for `sap/ui/test/matchers/BindingPath` since the orinial test cases located in [BindinPath.qunit.js](https://github.com/SAP/openui5/blob/master/src/sap.ui.core/test/sap/ui/core/qunit/opa/matchers/BindingPath.qunit.js)
 are not sufficient.
 
 The 'extended custom test cases' depict a bug in the BindingPath matcher when `modelName` is set and the bound `propertyPath` is a root property.
