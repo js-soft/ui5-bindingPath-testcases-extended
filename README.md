@@ -33,4 +33,8 @@ For installation instructions please see [Installing the UI5 CLI](https://github
 1. <span style="color:red">Note the failed test case no. 4. and 6 and the successfull test case no. 5.</span>
 
 # Debugging Information
-The function `function _getFormattedPath(sPath, bWithNamedModel, bWithContext)` in `sap/ui/test/matchers/BindingPath` does `substring(1)` for all cases when the model is a named model and the path starts with a '/'. The needed workaround is a leading double slash in case the property is a model root property.
+The function
+``` javascript
+function _getFormattedPath(sPath, bWithNamedModel, bWithContext)
+```
+ in `sap/ui/test/matchers/BindingPath` does `substring(1)` for all cases when the model is a named model and the path starts with a '/'. The needed workaround is a leading double slash in case the property is a model root property.
