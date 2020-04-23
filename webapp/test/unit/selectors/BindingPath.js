@@ -13,7 +13,7 @@ sap.ui.define([
         }
     });
 
-    // --- standard tests available here: https://github.com/SAP/openui5/blob/master/src/sap.ui.core/test/sap/ui/core/qunit/opa/matchers/BindingPath.qunit.js
+    // --- standard tests not modified - available here: https://github.com/SAP/openui5/blob/master/src/sap.ui.core/test/sap/ui/core/qunit/opa/matchers/BindingPath.qunit.js
 
     QUnit.test("#1 - Should match both property path and model name", function (assert) {
         var oBindingPath = new BindingPath({
@@ -23,7 +23,6 @@ sap.ui.define([
         var bResult = oBindingPath.isMatching(this.oNamedModelNoRootPropertyText);
         assert.ok(bResult, "Should match control with exact property path and model name");
     });
-
 
     QUnit.test("#2 - Should not match property path if model name is different", function (assert) {
         var oBindingPath = new BindingPath({
